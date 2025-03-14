@@ -1,0 +1,355 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 1rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#d90429;
+    --text-color:#020102;
+    --bg-color:#fff;
+}
+section{
+    padding: 4rem 0 2rem;
+}
+img{
+    width: 100%;
+
+}
+body{
+    color: var(--text-color);
+}
+.container{
+    max-width:1068px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+header{
+    display: block;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 100;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--bg-color);
+    display: none;
+}
+.logo-container {
+    display: flex; 
+    align-items: center; 
+}
+
+.logo {
+    font-size: 1.2rem; 
+    font-weight: 700; 
+    color: var(--bg-color); 
+    margin-left: 10px; 
+}
+
+.logo-image {
+    width: 100px; 
+    height: auto; 
+}
+
+.logo span {
+    color: var(--main-color); 
+}
+.navbar{
+    display: flex;
+    column-gap: 2rem;
+}
+.navbar a{
+    color:var(--bg-color);
+    font-size:1rem;
+    text-transform:uppercase;
+    font-weight:600;
+}
+.navbar a:hover ,
+.navbar .active{
+    color:var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+#search-icon{
+    font-size: 24px;
+    cursor:pointer;
+    color: var(--bg-color);
+}
+.search-box{
+    position: absolute;
+    top: 110%;
+    right: 0;
+    left: 0;
+    background: var(--bg-color);
+    box-shadow: 4px 4px 20px rgb(15 54 55 / 10% );
+    border: 1px solid var(--main-color);
+    border-radius: 0.5rem;
+    clip-path: circle(0% at 100% 0%);
+}
+.search-box.active{
+    clip-path: circle(144% at 100% 0%);
+    transition: 0.4s;
+}
+.search-box input{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+
+}
+.home{
+    max-width: 1500px;
+    margin: auto;
+    width: 100%;
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+    background: url(photo_2025-03-09_10-34-21.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center right;
+    color: white;
+   
+}
+.home-text{
+    padding-left: 130px;
+}  
+.home-text h1{
+    font-size: 2.4rem;
+}
+.home-text span{
+    color: var(--main-color);
+}
+.home-text p{
+    font-size: 0.938rem;
+    font-weight: 300;
+    margin: 0.5rem 0 1.2rem;
+}
+.btn{
+    padding:10px 22px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-weight: 600;
+}
+.btn:hover{
+    background: #fd052f;
+}
+
+.heading, .cars {
+    margin: 0;
+    padding: 0;
+}
+
+.cover-section {
+    background: url('photo_2025-03-10_11-12-59.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 5rem 0;
+    min-height: 100vh; 
+}
+
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 3.5rem;
+    color: var(--main-color);
+
+}
+.heading span{
+   position: relative;
+    z-index: 0;
+}
+.heading span::before{
+    content: '';
+    position:absolute;
+    bottom:1rem;left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--bg-color);
+    clip-path: polygon(0 90%,100% 80%,100% 100%,0% 100%);
+}
+.cars .vehicles-slider{
+        padding-bottom: 5rem;
+        
+   
+    
+}
+.cars .vehicles-slider .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 30rem;
+}
+
+.cars .vehicles-slider .box img {
+    width: 100%; 
+    height: 350px; 
+    object-fit: cover; 
+    opacity: .5;
+    transform: scale(.8);
+}
+
+    
+
+.cars .vehicles-slider .box .content{
+   transform: scale(0);
+   padding-top: 1rem;
+}
+.cars .vehicles-slider .swiper-slide-active img{
+    opacity: 1;
+    transform: scale(1);
+
+}
+.cars .vehicles-slider .swiper-slide-active .content{
+    transform: scale(1);
+}
+.cars .vehicles-slider .box .content h3{
+    font-size: 2.5rem;
+    color: var(--main-color);
+}
+.cars .vehicles-slider .box .content .price{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    padding: 1rem 0;
+    font-weight: bolder;
+}
+.cars .vehicles-slider .box .content .price span{
+    font-size: 1.7rem;
+    color: var(--main-color);
+    font-weight: normal;
+}
+.cars .vehicles-slider .box .content p{
+    font-size: 1.6rem;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid gray; 
+    color:var(--bg-color)
+}
+.cars .vehicles-slider .box .content p span{
+    color: var(--main-color);
+    font-size:.8rem;
+    padding: 0 .5rem;
+}
+.swiper-pagination-bullet-active{
+    background: var(--main-color);
+    margin-top: 0;
+}
+.cars .vehicles-slider .box .content .btn {
+    margin-bottom: 5px;
+}
+.swiper-pagination {
+    margin-top: 20px; 
+    padding: 0;
+    position: relative;
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    background: url('photo_2025-03-10_12-44-37.jpg');
+    background-size: cover;
+    padding: 5rem 0;
+    min-height: 100vh;
+    min-width: 100%;
+
+}
+.about-img{
+    flex: 1 1 21rem;
+}
+.about-text{
+    flex: 1 1 21rem;
+}
+.about-text span{
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: var(--main-color);
+
+}
+.about-text h2{
+    font-size: 1rem;
+    color: var(--bg-color);
+}
+.about-text p{
+    font-size: 0.938rem;
+    margin: 0.5rem 0 1.4rem;
+    color: white;
+}
+.contact-section {
+    background:url('photo_2025-03-10_12-44-37.jpg');
+    background-size: cover;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--bg-color);
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: var(--bg-color)
+}
+
+.contact-form h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+
+}
+
+.contact-form .box {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    color: var(--main-color)
+}
+
+.contact-form .box:focus {
+    border-color:var(--main-color);
+    outline: none;
+}
+
+.contact-form button {
+    padding: 15px 30px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: var(--main-color);
+}
+

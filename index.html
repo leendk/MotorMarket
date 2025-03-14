@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Responsive Car Sale website</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+
+        <!--link to css-->
+        <link rel="stylesheet" href="style.css">
+        <!--Box Icons-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    </head>
+    <body>
+        <!--Navbar-->
+        <header>
+            <!--Nav Container-->
+            <div class="nav container">
+                <!--Menu Icon-->
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <!--logo-->
+                <div class="logo-container">
+                    <img src="logo-removebg-preview.png" alt="Logo" class="logo-image">
+                    <a href="#" class="logo">Motor<span>Market</span></a>
+                </div>
+                <!--Nav List-->
+                <ul class="navbar">
+                    <li><a href="#home" class="active">Home</a> </li>
+                    <li><a href="#cars">Cars</a> </li>
+                     <li><a href="#about">About</a> </li> 
+                     <li><a href="#contact">Contact</a> </li>
+                </ul>
+                <!--Search Icon-->
+                <i class='bx bx-search' id="search-icon"></i>
+                <!--Search Box-->
+                <div class="search-box container ">
+                    <input type="search" name="" id="" placeholder="Search here...">
+                </div>
+
+            </div>
+        </header>
+        <!--Home-->
+        <section class="home" id="home">
+            <div class="home-text">
+                <h1>Trade in your old car and <br> upgrade to a 
+                    <span>newer model<br></span>with ease!</h1>
+                <p>your trusted destination for quality cars at unbeatable prices <br> </p>
+                <!--Home button-->
+                <a href="#" class="btn">Discover Now</a>
+            </div>
+        </section>
+        <!--Cars section-->
+        <section class="cars" id="cars">
+            <section class="cover-section">
+            <h1 class="heading">Popular <span>Vehicles</span></h1>
+            <div class=" swiper vehicles-slider">
+                <div class=" swiper-wrapper">
+                    <div class=" swiper-slide box">
+                        <img src="car1.png" alt="">
+                        <div class="content">
+                            <h3>New Model</h3>
+                            <div class="price"><span>Price:</span>$85000/-</div>
+                            <p>
+                                New
+                                <span class='bx bxs-circle'></span>2021
+                                <span class='bx bxs-circle'></span>automatic
+                                <span class='bx bxs-circle'></span>petrol
+                                <span class='bx bxs-circle'></span>183mph 
+                            </p>
+                           
+                            <a href="#" class="btn">check out</a>
+                        </div>
+                    </div>
+                    <div class=" swiper-slide box">
+                        <img src="car2.png" alt="">
+                        <div class="content">
+                            <h3>New Model</h3>
+                            <div class="price"><span>Price:</span>$75000/-</div>
+                            <p>
+                                New
+                                <span class='bx bxs-circle'></span>2019
+                                <span class='bx bxs-circle'></span>automatic
+                                <span class='bx bxs-circle'></span>petrol
+                                <span class='bx bxs-circle'></span>200mph
+                            </p>
+                           
+                            <a href="#" class="btn">check out</a>
+                        </div>
+                    </div>
+                    <div class=" swiper-slide box">
+                        <img src="car3.png" alt="">
+                        <div class="content">
+                            <h3>New Model</h3>
+                            <div class="price"><span>Price:</span>$65000/-</div>
+                            <p>
+                                New
+                                <span class='bx bxs-circle'></span>2010
+                                <span class='bx bxs-circle'></span>automatic
+                                <span class='bx bxs-circle'></span>petrol
+                                <span class='bx bxs-circle'></span>150mph
+                            </p>
+                            <a href="#" class="btn">check out</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="car45.png" alt="">
+                        <div class="content">
+                            <h3>New Model</h3>
+                            <div class="price"><span>Price:</span>$10000/-</div>
+                            <p>
+                                new
+                                <span class='bx bxs-circle'></span>2024
+                                <span class='bx bxs-circle'></span>automatic
+                                <span class='bx bxs-circle'></span>petrol
+                                <span class='bx bxs-circle'></span>210mph
+                            </p>
+                            <a href="#" class="btn">check out</a>
+                        </div>
+                    </div>
+                    <div class=" swiper-slide box">
+                        <img src="car5.png" alt="">
+                        <div class="content">
+                            <h3>New Model</h3>
+                            <div class="price"><span>Price:</span>$45000/-</div>
+                            <p>
+                                new
+                                <span class='bx bxs-circle'></span>2018
+                                <span class='bx bxs-circle'></span>automatic
+                                <span class='bx bxs-circle'></span>petrol
+                                <span class='bx bxs-circle'></span>183mph
+                            </p>
+                            <br>
+                            <a href="#" class="btn">check out</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        </section>
+        <!--ABOUT-->
+        <section class="about container" id="about">
+            <div class="about-img">
+                <img src="about.png" alt="">
+            </div>
+            <div class="about-text">
+                <span>About Us</span>
+                <h2>Cheap Prices With<br>Quality Cars</h2>
+                <p>At Motor Market, we prioritize customer satisfaction by providing<br> top-quality vehicles and exceptional service.</p>
+                <!--About Buttom-->
+                <a href="#" class="btn">Learn More</a>
+
+            </div>
+        </section>
+        <!--contact-->
+        
+        <section class="contact-section" id="contact">
+            <h2 class="title">Contact Us</h2>
+        
+            <div class="contact-container">
+                <form class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <input type="text" class="box" placeholder="الاسم الكامل" required>
+                    <input type="email" class="box" placeholder="البريد الإلكتروني" required>
+                    <input type="tel" class="box" placeholder="رقم الهاتف" required>
+                    <textarea class="box" placeholder="رسالتك" required></textarea>
+                    <button type="submit" class="btn">إرسال</button>
+                </form>
+            </div>
+        </section>
+        
+        
+        </body>
+        </html>
+        
+
+
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <!--link to js-->
+        <script src="main.js"></script>
+    </body>
+</html>
