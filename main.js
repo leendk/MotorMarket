@@ -25,7 +25,7 @@ var swiper = new Swiper(".vehicles-slider", {
           slidesPerView: 2,
           
         },
-        20: {
+        250: {
           slidesPerView: 3,
           
         },
@@ -35,4 +35,26 @@ var swiper = new Swiper(".vehicles-slider", {
       e.preventDefault();
       alert("Your message has been sent successfully!");
   });
+  window.onscroll = function() { scrollFunction() };
+
+function scrollFunction() {
+    let btn = document.getElementById("topBtn");
+    if (window.scrollY > 300) {
+        btn.style.display = "block"; 
+    } else {
+        btn.style.display = "none"; 
+    }
+}
+
+function topFunction() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+ 
+    let btnSvg = document.querySelector("#topBtn svg");
+    btnSvg.style.transform = "rotate(360deg)";
+    setTimeout(() => {
+        btnSvg.style.transform = "rotate(0deg)";
+    }, 500);
+}
+
   
